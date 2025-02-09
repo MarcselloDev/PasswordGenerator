@@ -1,0 +1,143 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  user-select: none;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: linear-gradient(45deg, #2844c2, #289e2e);
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+  overflow: hidden;
+}
+
+.container {
+  background: #fff;
+  border-radius: 12px;
+  box-shadow: 0 0 25px rgba(0, 0, 0, 0.5);
+  padding: 1rem 2rem;
+  width: 320px;
+  text-align: center;
+  scale: 2;
+}
+
+h1 {
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  color: #333;
+}
+
+.password-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+#password {
+  flex: 1;
+  padding: 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  background-color: #f9f9f9;
+  color: #333;
+  outline: none;
+  transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  text-align: center;
+  cursor: pointer;
+}
+
+#password:active {
+  background-color: rgb(225, 225, 225);
+}
+
+#password:focus {
+  border-color: #667eea;
+  box-shadow: 0 0 0 2px rgba(102, 126, 234, 0.2);
+}
+
+#generate-btn{
+  border-radius: 30px;
+  width: 50%;
+  padding: 7px 4px;
+  background-color: rgb(0, 0, 0);
+  color: rgb(255, 255, 255);
+  border: none;
+  cursor: pointer;
+}
+#generate-btn:active{
+  opacity: 0.85;
+}
+
+.options {
+  margin-bottom: 1rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.options label {
+  font-size: 0.9rem;
+  color: #555;
+  flex: 1;
+  text-align: left;
+  cursor: pointer;
+}
+
+.options input[type="number"],
+.options input[type="checkbox"] {
+  padding: 0.5rem;
+  font-size: 0.9rem;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+}
+
+.options input[type="checkbox"] {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+#security{
+  font-weight: bold;
+}
+
+@media (max-width: 1400px) {
+  body{
+    scale: 0.8;
+  }
+}
+
+@media (max-width: 1200px) {
+  body{
+    scale: 0.7;
+  }
+}
+
+@media (max-width: 800px) {
+  body{
+    scale: 0.6;
+  }
+}
+
+@media (max-width: 500px) {
+  body{
+    scale: 0.5;
+  }
+}
+
+@media (max-width: 200px) {
+  body{
+    scale: 0.2;
+    overflow: visible;
+  }
+}

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Password Generator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Password Generator</h1>
+        <div class="password-box">
+            <input type="text" id="password" readonly>
+            <p style="font-size: 0.8rem; color: gray">Click Password to Copy</p>
+            <button onclick="generatePassword()" id="generate-btn">New Password</button>
+        </div>
+        <div class="options">
+            <label for="length">Length:</label>
+            <input type="number" id="length" value="12" min="4" max="20">
+        </div>
+        <div class="options">
+            <label for="include-symbols">Include Symbols:</label>
+            <input type="checkbox" id="include-symbols" checked>
+        </div>
+        <div class="options">
+            <label for="include-numbers">Include Numbers:</label>
+            <input type="checkbox" id="include-numbers" checked>
+        </div>
+        <div class="options">
+            <label for="include-uppercase">Include Uppercase Letters:</label>
+            <input type="checkbox" id="include-uppercase" checked>
+        </div>
+        <div class="options">
+            <label for="include-lowercase">Include Lowercase Letters:</label>
+            <input type="checkbox" id="include-lowercase" checked>
+        </div>
+        <p>Strength: <span id="security"></span></p>
+        <p style="font-size: 0.4rem; margin-top: 5px" >Disclaimer: this is a rough estimation of the strength of the password and should not be considered as a guarantee of its resistance to hacking.</p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
